@@ -1,0 +1,4 @@
+Refactorizar el ejercicio 1 de 'los monos' tal que el contador
+sume valores sin limite.
+Cuando el contador sea un numero par muestra un emoji
+cuando el contador sea un numero impar, muestra otro
