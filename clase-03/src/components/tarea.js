@@ -20,15 +20,15 @@ function Tarea() {
         }
     }
 
-function emoticon() {
-    if(estado % 2 == 0) {
-        emoji = ':O';
+    function emoticon() {
+        if(estado % 2 == 0) {
+            emoji = ':O';
+        }
+        else {
+            emoji = ':X';
+        }
+        return emoji;
     }
-    else {
-        emoji = ':X';
-    }
-    return emoji;
-}
 
    return (
         <div>
