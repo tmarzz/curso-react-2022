@@ -30,7 +30,7 @@ function Tarea() {
         return emoji;
     }
 
-   return (
+    return (
         <div>
             <button
                 onClick={Sumar}
