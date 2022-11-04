@@ -46,7 +46,7 @@ function Tarea() {
                 -
             </button>
         </div>
-   ); 
+    ); 
 }
 
 export default Tarea;
