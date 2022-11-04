@@ -3,10 +3,11 @@ import './App.css';
 // import ComponenteRepasoClaseAnterior from './components/componenteRepasoClaseAnterior';
 // import Componente from './components/OtraFormaDeUsarCSS';
 // import AgregandoComportamiento from './components/hooks';
-import ComponenteContador from './components/componenteContador';
-import EjemploHook01 from './components/ejemploHook01';
-import Ejercicio01 from './components/ejercicio01';
-import Hook02 from './components/hooks02';
+// import ComponenteContador from './components/componenteContador';
+// import EjemploHook01 from './components/ejemploHook01';
+// import Ejercicio01 from './components/ejercicio01';
+// import Hook02 from './components/hooks02';
+import Tarea from './components/tarea';
 
 function App() {
   return (
@@ -15,9 +16,10 @@ function App() {
       <Componente />
       <AgregandoComportamiento /> */}
       {/* <ComponenteContador /> */}
-      <EjemploHook01 />
-      <Ejercicio01 />
-      <Hook02 />
+      {/* <EjemploHook01 /> */}
+      {/* <Ejercicio01 />
+      <Hook02 /> */}
+      <Tarea />
     </div>
   );
 }
