@@ -18,9 +18,6 @@ function Tarea() {
         if(estado > 0) {
             setEstado(estado - 1)
         }
-        else{
-            setEstado(2)
-        }
     }
 
 function emoticon() {
