@@ -5,15 +5,24 @@
 */
 
 import './App.css';
-import imgTarjetaPromocion from './img/HBOMax_widgetmulti_mobdsk_mla_@3x.jpg';
-import ComponenteTarjetaPromocion from './components/componenteTarjetaPromoción';
+import ContenedorTarjetas from './components/componenteContenedorTarjetas';
+// import imgTarjetaPromocion from './img/HBOMax_widgetmulti_mobdsk_mla_@3x.jpg';
+// import imgLogoHBO from './img/hbo-max-logo.png';
+// import ComponenteTarjetaPromocion from './components/componenteTarjetaPromoción';
 
 function App() {
   return (
     <div>
-      <ComponenteTarjetaPromocion 
+      {/* <ComponenteTarjetaPromocion 
         imagen={imgTarjetaPromocion}
-      />
+        logo={imgLogoHBO}
+        detalleLogo='Logo HBO'
+        promocion='7 DÍAS GRATIS'
+        descuento='Hasta 50% OFF'
+        plataforma='HBO Max'
+      /> */}
+      <ContenedorTarjetas />
+
     </div>
   );
 }
