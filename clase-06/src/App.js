@@ -5,7 +5,8 @@
 */
 
 import './App.css';
-import ContenedorTarjetas from './components/componenteContenedorTarjetas';
+import Cabecera from './components/componenteCabecera';
+// import ContenedorTarjetas from './components/componenteContenedorTarjetas';
 // import imgTarjetaPromocion from './img/HBOMax_widgetmulti_mobdsk_mla_@3x.jpg';
 // import imgLogoHBO from './img/hbo-max-logo.png';
 // import ComponenteTarjetaPromocion from './components/componenteTarjetaPromoción';
@@ -21,8 +22,8 @@ function App() {
         descuento='Hasta 50% OFF'
         plataforma='HBO Max'
       /> */}
-      <ContenedorTarjetas />
-
+      {/* <ContenedorTarjetas /> */}
+      <Cabecera />
     </div>
   );
 }
