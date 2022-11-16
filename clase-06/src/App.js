@@ -6,6 +6,7 @@
 
 import './App.css';
 import Cabecera from './components/componenteCabecera';
+import ContenedorTarjetas from './components/componenteContenedorTarjetas';
 // import ContenedorTarjetas from './components/componenteContenedorTarjetas';
 // import imgTarjetaPromocion from './img/HBOMax_widgetmulti_mobdsk_mla_@3x.jpg';
 // import imgLogoHBO from './img/hbo-max-logo.png';
@@ -24,6 +25,7 @@ function App() {
       /> */}
       {/* <ContenedorTarjetas /> */}
       <Cabecera />
+      <ContenedorTarjetas />
     </div>
   );
 }
