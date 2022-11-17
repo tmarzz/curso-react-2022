@@ -1,4 +1,4 @@
-import imgLogo from './../img/hbo-max-logo.png'
+// import imgLogo from './../img/hbo-max-logo.png'
 import ComponenteLogo from "./componenteLogo";
 import ComponenteTextoTarjeta from "./componenteTextoTarjeta";
 
@@ -15,8 +15,11 @@ function ComponenteTarjetaPromocion(props){
             backgroundSize: 'cover',
             display: 'flex',
             alignItems: 'end',
-            padding: '0.5rem',
-            boxSizing: 'border-box'
+            padding: '1.2rem',
+            paddingLeft: '1rem',
+            boxSizing: 'border-box',
+            // marginLeft: '2rem',
+            marginRight: '1rem'
         },
         contenedor02: {            
             display: 'flex',
@@ -24,20 +27,21 @@ function ComponenteTarjetaPromocion(props){
             alignItems: 'end',
         }
     }
-
     return(
-        <div style={estilos.contenedor}>
+        <div 
+            style={estilos.contenedor} 
+        >
             <div
                 style={estilos.contenedor02}
             >
                 <ComponenteLogo             
-                    logo={imgLogo}
-                    detalle='Logo HBO'
+                    logo={props.logo}
+                    detalle={props.detalleLogo}
                 />
                 <ComponenteTextoTarjeta  
-                    promocion='7 DÍAS GRATIS'
-                    descuento='Hasta 50% OFF'
-                    plataforma='HBO Max'            
+                    promocion={props.promocion}
+                    descuento={props.descuento}
+                    plataforma={props.plataforma}            
                 />
             </div>
         </div>
