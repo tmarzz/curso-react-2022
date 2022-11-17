@@ -17,13 +17,12 @@ function ContenedorTarjetas() {
             width: '100%',
             alignItems: 'center',
             paddingTop: '2rem',
-            // paddingLeft: '1.5rem',
             paddingBottom: '2rem',
         },
         cabecera: {
             display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'left',
+            alignItems: 'center',
+            paddingRight: '43rem'
 
         },
         tarjetero: {

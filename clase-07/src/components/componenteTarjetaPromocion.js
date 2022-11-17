@@ -9,7 +9,7 @@ function ComponenteTarjetaPromocion(props){
             // width: '26rem',
             // height: '19rem',
             width: '400px',
-            height: '295px',
+            height: '250px',
             backgroundImage: `url(${props.imagen})`,
             backgroundPosition: 'center',
             backgroundSize: 'cover',
