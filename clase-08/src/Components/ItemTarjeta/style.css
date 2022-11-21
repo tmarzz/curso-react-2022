@@ -1,0 +1,41 @@
+/* div{
+    display: flex;
+    flex-direction: column;
+} */
+
+input{
+    border: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+input:focus{
+    outline: none;
+}
+
+textarea{    
+    border: none;
+    font-size: 15px;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.editable{
+    color: cornflowerblue;
+    border-bottom: solid black 2px;
+}
+
+.no-editable{
+    color: ghostwhite;
+}
+
+.paper{
+    height: 200px;
+    width: 300px;
+    background-color: rebeccapurple;
+    border-radius: 7px;
+    box-sizing: border-box;
+    padding: 10px;
+}
