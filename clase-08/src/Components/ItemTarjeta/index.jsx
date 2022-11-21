@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Paper from "../Paper";
+import Contenedor from '../Contenedor';
 import './style.css';
 
 function ItemTarjeta(props) {
@@ -16,7 +18,58 @@ function ItemTarjeta(props) {
     }
 
     return(
-        <div
+        <Paper
+            color='purple'
+        >            
+            <Contenedor
+                direccion='column'
+            >
+                <input  
+                    type='text'
+                    value={titulo}
+                    onChange={updateTitulo}
+                    readOnly={editable === false}
+                    className={editable === true ? 'editable' : 'no-editable'}
+                />
+                <textarea
+                    readOnly={editable === false}
+                    className={editable === true ? 'editable' : 'no-editable'}
+                    value={props.detalle}
+                />
+                <Contenedor
+                    direccion='row'
+                >
+                    {
+                        editable === false ? 
+                            <button
+                                onClick={() => (setEditable(true))}
+                            >
+                                Editar
+                            </button>
+                        :
+                        <button
+                            onClick={() => (setEditable(false))}
+                        >
+                            Guardar
+                        </button>
+                    }
+                    <button
+                        onClick={() => (
+                            props.funcionBorrar(props.id)
+                        )}
+                    >
+                        Eliminar
+                    </button>
+                </Contenedor>
+            </Contenedor>
+        </Paper>
+    );
+    
+}
+        
+export default ItemTarjeta;
+
+{/*     <div
             className="paper"
         >
             <input  
@@ -46,10 +99,4 @@ function ItemTarjeta(props) {
                     Guardar
                 </button>
             }
-
-
-        </div>
-    );
-}
-
-export default ItemTarjeta;
+    </div> */}
