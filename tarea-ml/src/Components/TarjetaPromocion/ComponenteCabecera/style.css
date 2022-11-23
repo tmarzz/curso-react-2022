@@ -1,0 +1,18 @@
+.cabecera {
+    display: flex;
+    align-items: center; 
+    padding-right: 43rem;
+
+}
+
+.titulo {
+    color: #6b6967;
+    font-weight: lighter;
+}
+
+.enlace {
+    text-decoration: none;
+    padding-top: 0.3rem;
+    padding-left: 1rem;
+    font-size: 0.9rem;
+}
