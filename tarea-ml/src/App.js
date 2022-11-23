@@ -1,9 +1,12 @@
+import TarjetaProducto from "./Components/CarrouselProductos/ComponenteTarjetaProducto";
 import ContenedorTarjetas from "./Components/TarjetaPromocion/ComponenteContenedorTarjetas";
 
 
 function App() {
   return (
-    <div>
+    <div
+      style={{backgroundColor: '#ebebeb'}}
+    >
       {/* <ComponenteTarjetaPromocion         
         logo={logoHBO}
         detalle='Logo HBO'
@@ -11,7 +14,8 @@ function App() {
         descuento='Hasta 50% OFF'
         plataforma='Paramount+'
       /> */}
-      <ContenedorTarjetas />
+      <TarjetaProducto />
+      {/* <ContenedorTarjetas /> */}
     </div>
   );
 }

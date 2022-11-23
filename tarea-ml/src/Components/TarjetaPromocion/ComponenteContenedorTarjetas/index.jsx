@@ -58,6 +58,7 @@ function ContenedorTarjetas() {
                             detalle= {item.detalleLogo}
                             descuento= {item.descuento}
                             plataforma= {item.plataforma}
+                            promocion= {item.promocion}
                         />
                     ))
                 }
