@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import './Style.css';
 
-function CasillaTateti({tableroEnviado, x, y, funcionActualizarTableroEnviada}){
+function CasillaTateti({x, y, funcionActualizarTableroEnviada, habilitado}){
 
     const [miValor, setMiValor] = useState(null);
 
     const hizoClick = () => {
-        let resultado = funcionActualizarTableroEnviada(x,y);
-        setMiValor(resultado)
+        if (habilitado(x,y)){
+            let resultado = funcionActualizarTableroEnviada(x,y);
+            setMiValor(resultado)
+        }
     }
 
     return(
@@ -15,7 +17,7 @@ function CasillaTateti({tableroEnviado, x, y, funcionActualizarTableroEnviada}){
             className='contenedorCasilla'
             onClick={hizoClick}
         >
-            {tableroEnviado[x][y]}
+            {miValor}
         </div>
     );
 }
