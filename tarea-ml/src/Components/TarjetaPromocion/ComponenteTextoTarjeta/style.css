@@ -1,0 +1,29 @@
+.contenedor03 {
+     color: white;  
+     display: flex; 
+     flex-direction: column;    
+     justify-content: center;   
+     height: 5rem;  
+     padding-left: 1rem;
+}
+
+.pretitulo {
+    margin: 0rem;
+    margin-bottom: 0.2rem; 
+    font-size: 0.65rem;
+    font-weight: 600;
+}
+
+.titulo01 {
+    margin: 0rem;
+    margin-bottom: 0.2rem; 
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.subtitulo {
+    margin: 0rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.85rem;
+    font-weight: 300;
+}

@@ -1,0 +1,16 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    background-color: #ebebeb; /*ORISHINAL*/
+    /* background-color: blueviolet; */
+    width: 100%;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.tarjetero {
+    display: flex;
+    flex-direction: row;
+    padding-right: 0.2rem;
+}
