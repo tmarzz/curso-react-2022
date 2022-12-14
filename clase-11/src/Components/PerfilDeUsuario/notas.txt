@@ -1,0 +1,4 @@
+ComponentDidMount   -> useEffect(, [])
+ComponentDidUpdate  -> useEffect() - Este se ejecuta siempre
+                    -> useEffect(,[uno o más HOOK]) - solo se ejecuta cuando el Hook sufre un cambio
+ComponenWillUnmount -> useEffect(() => { return ACÁ SE EJECUTA}) - se ejecuta dentro de cualquier useEffect en el return de final de la función y básicamente se utiliza para limpiar lo sucio
