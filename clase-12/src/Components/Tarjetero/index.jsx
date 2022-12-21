@@ -1,4 +1,5 @@
 import PostItem from '../PostItem';
+import PostItemInput from '../PostItemInput';
 import './style.css';
 import Axios from 'axios';
 import { useEffect, useState } from 'react';
@@ -32,8 +33,15 @@ function Tarjetero(){
     <div
         className='tarjetero-contenedor'
     >
-        {json.map((post) => (
+        {/* {json.map((post) => (
             <PostItem 
+                id={post.id}
+                title={post.title}
+                body={post.body}
+            />
+        ))} */}
+        {json.map((post) => (
+            <PostItemInput 
                 id={post.id}
                 title={post.title}
                 body={post.body}
