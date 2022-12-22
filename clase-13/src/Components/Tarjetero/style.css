@@ -1,0 +1,6 @@
+.tarjetero-contenedor{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
