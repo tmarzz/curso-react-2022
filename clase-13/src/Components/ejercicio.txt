@@ -1,8 +1,0 @@
-Armar dos componentes:
-    - Un componente de tabla
-    - Un componente de fila
-
-Dentro del componente de tabla, hacer la conexion a la api de 
-jsonplaceholder para traer la lista de usuarios, mostrar en la tabla.
-
-https://jsonplaceholder.typicode.com/users
