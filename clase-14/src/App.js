@@ -1,12 +1,12 @@
 import './App.css';
-import AppRouter from './Routers/AppRouterMain';
+import TarjetaAvanzada from './Components/TarjetaAvanzada';
 
 function App() {
   return (
     <div
       className='App'
     >
-      <AppRouter />
+      <TarjetaAvanzada />
     </div>
   );
 }
