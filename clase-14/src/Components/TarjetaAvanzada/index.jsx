@@ -1,21 +1,34 @@
 import { useEffect, useState } from "react";
 import Axios from "axios";
 
-function TarjetaAvanzada({id, title, description, price}) {
-    // const [json, setJson] = useState();
+function TarjetaAvanzadaEspecifica({id}){
+    const [json, setJson] = useState({});
 
-    // useEffect(() => {
-    //     Axios({
-    //         url: 'https://dummyjson.com/products/1'
-    //     })
-    //     .then((response) => {
-    //         setJson(response.data);
-    //     })
-    //     .catch((error) => {
-    //         console.log(error);
-    //     })
-    // }, []);
+    // Se ejecuta una sola vez al principio del montaje
+    useEffect(() => {
+            Axios({
+                url: `https://dummyjson.com/products/${id}`
+            })
+            .then((response) => {
+                console.log(response.data);
+                console.log(id);
+                setJson(response.data)
+            })
+            .catch((error) => {
+                console.log(error);
+            })        
+    }, []);
 
+    return(
+        <TarjetaAvanzada 
+            title={json.title}
+            description={json.description}
+            price={json.price}
+        />
+    );
+}
+
+function TarjetaAvanzada({title, description, price}) {
     return(
         <div
             style={{
@@ -31,14 +44,14 @@ function TarjetaAvanzada({id, title, description, price}) {
 }
 
 function ListaTarjetasAvanzadas(){
-    const [json, setJson] = useState();
+    const [json, setJson] = useState([]);
 
     useEffect(() => {
         Axios({
-            url: 'https://dummyjson.com/products/1'
+            url: 'https://dummyjson.com/products'
         })
         .then((response) => {
-            setJson(response.data);
+            setJson(response.data.products);
         })
         .catch((error) => {
             console.log(error);
@@ -52,16 +65,16 @@ function ListaTarjetasAvanzadas(){
                 flexDirection: 'column'
             }}
         >
-            {json.map(({id, title, description, price}) => {
+            {json.map(({id, title, description, price}) => (
                 <TarjetaAvanzada 
-                    id={id}
+                    key={`tarjetaavanzada-${id}`}
                     title={title}
                     price={price}
                     description={description}
                 />
-            })}
+                ))}
         </div>
     )
 }
 
-export {TarjetaAvanzada, ListaTarjetasAvanzadas}
+export {TarjetaAvanzada, ListaTarjetasAvanzadas, TarjetaAvanzadaEspecifica};

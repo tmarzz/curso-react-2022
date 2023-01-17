@@ -1,12 +1,16 @@
 import './App.css';
-import TarjetaAvanzada from './Components/TarjetaAvanzada';
+import { ListaTarjetasAvanzadas, TarjetaAvanzada, TarjetaAvanzadaEspecifica } from './Components/TarjetaAvanzada';
 
 function App() {
   return (
     <div
       className='App'
     >
-      <TarjetaAvanzada />
+      <ListaTarjetasAvanzadas />
+      <h2>El que es distinto!</h2>
+      <TarjetaAvanzadaEspecifica 
+        id={1}
+      />
     </div>
   );
 }
